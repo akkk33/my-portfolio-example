@@ -10,6 +10,8 @@
     height: 3px;
     margin: 0 0 5px 0;
     background-color: White; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
 
 * {
   box-sizing: border-box; }

@@ -12,4 +12,15 @@
             margin: 0 0 5px 0;
             background-color: $third_color;
             }
+                // Transform menu btn to X
+        &.close{
+            transform: rotate(180deg);
+            .btn-line{
+                // Line 1 rotate
+
+                // Line 2 hide
+
+                // Line 3 rotate
+                }
+            }
     }
