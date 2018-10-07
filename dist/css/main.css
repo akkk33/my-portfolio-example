@@ -11,7 +11,17 @@
     margin: 0 0 5px 0;
     background-color: White; }
   .menu-btn.close {
-    transform: rotate(180deg); }
+    transform: rotate(180deg);
+    transition: all 1s ease-out; }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: translate(0, 8px) rotate(45deg);
+      transition: all 1s ease-out; }
+    .menu-btn.close .btn-line:nth-child(2) {
+      display: none;
+      transition: all 1s ease-out; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: translate(0, 0) rotate(135deg);
+      transition: all 1s ease-out; }
 
 * {
   box-sizing: border-box; }
