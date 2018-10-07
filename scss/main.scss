@@ -41,6 +41,8 @@ header{
     color: $secondary_color;
 }
 main{
+    align-items: center;
+    text-align: center;
     padding: 3rem;
     height: 100%;
     .icons{
