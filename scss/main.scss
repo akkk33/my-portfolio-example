@@ -12,3 +12,14 @@ body{
     line-height: 2;
     }
 // headings
+h1,h2,h3{
+    font-weight: 300;
+    &.lg-heading{
+        font-size: 3rem;
+        }
+    &.sm-heading{
+        margin-bottom: 2rem;
+        padding: 0.33rem 3rem;
+        background-color: lighten($primary_color, 3);
+    }
+    }
