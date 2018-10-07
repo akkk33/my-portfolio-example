@@ -1,5 +1,8 @@
 $primary_color: #333;
 $secondary_color: #fff;
+* {
+    box-sizing: border-box;
+    }
 body{
     background-color: $primary_color;
     color: $secondary_color;
