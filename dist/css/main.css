@@ -4,7 +4,7 @@
   right: 33px;
   top: 33px;
   cursor: pointer;
-  transition: all 1s ease-out; }
+  transition: all 0.3s ease-out; }
   .menu-btn .btn-line {
     width: 33px;
     height: 3px;
@@ -12,28 +12,70 @@
     background-color: White; }
   .menu-btn.close {
     transform: rotate(180deg);
-    transition: all 1s ease-out; }
+    transition: all 0.3s ease-out; }
     .menu-btn.close .btn-line:nth-child(1) {
       transform: translate(0, 16px) rotate(45deg);
-      transition: all 1s ease-out; }
+      transition: all 0.3s ease-out; }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0;
-      transition: all 1s ease-out; }
+      transition: all 0.3s ease-out; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: translate(0, 0) rotate(135deg);
-      transition: all 1s ease-out; }
+      transition: all 0.3s ease-out; }
 
 .menu {
   position: fixed;
   top: 0;
   width: 100%;
-  visibility: hidden; }
+  visibility: hidden;
+  opacity: 0.95; }
   .menu.show {
     visibility: visible; }
   .menu-branding, .menu-nav {
     display: flex;
     flex-flow: column wrap;
-    align-items: center; }
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    transform: translate3d(100%, 0, 0);
+    transition: all 0.3s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    margin: 0;
+    padding: 0;
+    background: #323232;
+    transform: translate3d(-100%, 0, 0);
+    transition: all 0.3s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/portrait_sm.png");
+      background-size: cover;
+      border-radius: 100%;
+      border: solid #eece1a; }
+  .menu .nav-item {
+    width: 66%;
+    text-align: center;
+    margin: 0 0 5px 0;
+    text-transform: uppercase; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 400; }
+    .menu .nav-link:hover {
+      color: #eece1a;
+      transition: all 0.3s ease-out; }
 
 * {
   box-sizing: border-box; }
@@ -92,7 +134,7 @@ main {
       padding: 0.33rem; }
       main .icons a:hover {
         color: #eece1a;
-        transition: all 1s ease-out; }
+        transition: all 0.3s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
