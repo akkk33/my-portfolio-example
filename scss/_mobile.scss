@@ -1,0 +1,32 @@
+@include media_xl{
+
+}
+@include media_lg{
+    
+}
+@include media_md{
+
+}
+@include media_sm{
+    .menu-branding, .menu-nav{
+        flex-flow: row wrap;
+        width: 100%;
+        height: 50vh;
+        float: right;
+    }
+    .menu-branding{
+        transform: translate3d(0, -100%, 0);
+        .portrait{
+        width: 150px;
+        height: 150px;
+        background: $portrait_img;
+        background-size: cover;
+        border-radius: 100%;
+        border: solid $secondary_color;
+    }
+
+    }
+    .menu-nav{
+        transform: translate3d(0, 100%, 0);
+    }
+}
