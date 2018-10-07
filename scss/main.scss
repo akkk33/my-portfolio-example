@@ -1,11 +1,12 @@
 $primary_color: #333;
-$secondary_color: #fff;
+$secondary_color: #eece1a;
+$third_color: White;
 * {
     box-sizing: border-box;
     }
 body{
     background-color: $primary_color;
-    color: $secondary_color;
+    color: $third_color;
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,6 +21,18 @@ h1,h2,h3{
     &.sm-heading{
         margin-bottom: 2rem;
         padding: 0.33rem 3rem;
-        background-color: lighten($primary_color, 3);
+        background-color: rgba(lighten($primary_color, 3), 0.33);
     }
+    }
+a{
+    color: $third_color;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.text-secondary{
+    color: $secondary_color;
     }
