@@ -1,6 +1,26 @@
-$primary_color: #333;
-$secondary_color: #eece1a;
-$third_color: White;
+// Change the colors
+
+@function set_text_color($color)
+{
+    @if (lightness($color) > 40){
+        @return #000000;
+    }
+    @else{
+        @return #ffffff;
+    }
+}
+@function set_sec_color($color)
+    {
+        @if (lightness($color) > 40){
+        @return #0000ff;
+    }
+        @else{
+            @return #eece1a;
+        }
+    }
+$primary_color: #aaaaaa;
+$secondary_color: set_sec_color($primary_color);
+$third_color:  set_text_color($primary_color);
 $portrait_img: url('../img/portrait_sm.png');
 $home_img: url('../img/bg.jpg');
 $opacity: 0.89;
@@ -27,6 +47,7 @@ $show_img: true;
         }
     }
 }
+
 // Media query mixins
 @mixin media_sm{
     @media screen and (max-width: 500px){

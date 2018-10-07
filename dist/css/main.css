@@ -9,7 +9,7 @@
     width: 33px;
     height: 3px;
     margin: 0 0 5px 0;
-    background-color: White; }
+    background-color: #000000; }
   .menu-btn.close {
     transform: rotate(180deg);
     transition: all 0.3s ease-out; }
@@ -43,7 +43,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #262626;
+    background: #9d9d9d;
     transform: translate3d(100%, 0, 0);
     transition: all 0.3s ease-out; }
     .menu-nav.show {
@@ -51,7 +51,7 @@
   .menu-branding {
     margin: 0;
     padding: 0;
-    background: #323232;
+    background: darkgray;
     transform: translate3d(-100%, 0, 0);
     transition: all 0.3s ease-out; }
     .menu-branding.show {
@@ -62,7 +62,7 @@
       background: url("../img/portrait_sm.png");
       background-size: cover;
       border-radius: 100%;
-      border: solid #eece1a; }
+      border: solid #0000ff; }
   .menu .nav-item {
     width: 66%;
     text-align: center;
@@ -74,7 +74,7 @@
     font-size: 1.2rem;
     font-weight: 400; }
     .menu .nav-link:hover {
-      color: #eece1a;
+      color: #0000ff;
       transition: all 0.3s ease-out; }
 
 @media screen and (max-width: 500px) {
@@ -91,7 +91,7 @@
       background: url("../img/portrait_sm.png");
       background-size: cover;
       border-radius: 100%;
-      border: solid #eece1a; }
+      border: solid #0000ff; }
   .menu-nav {
     transform: translate3d(0, 100%, 0); } }
 
@@ -99,8 +99,8 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #333;
-  color: White;
+  background-color: #aaaaaa;
+  color: #000000;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -116,7 +116,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(51, 51, 51, 0.89);
+      background-color: rgba(170, 170, 170, 0.89);
       z-index: -1; }
 
 h1, h2, h3 {
@@ -126,10 +126,10 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.33rem 3rem;
-    background-color: rgba(255, 255, 255, 0.09); }
+    background-color: rgba(3, 3, 3, 0.09); }
 
 a {
-  color: White;
+  color: #000000;
   text-decoration: none; }
 
 ul {
@@ -141,7 +141,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #0000ff; }
 
 main {
   align-items: center;
@@ -153,7 +153,7 @@ main {
     main .icons a {
       padding: 0.33rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #0000ff;
         transition: all 0.3s ease-out; }
   main#home {
     overflow: hidden; }
