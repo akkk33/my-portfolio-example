@@ -9,7 +9,7 @@
     width: 33px;
     height: 3px;
     margin: 0 0 5px 0;
-    background-color: #000000; }
+    background-color: #ffffff; }
   .menu-btn.close {
     transform: rotate(180deg);
     transition: all 0.3s ease-out; }
@@ -43,7 +43,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #9d9d9d;
+    background: #005a49;
     transform: translate3d(100%, 0, 0);
     transition: all 0.3s ease-out; }
     .menu-nav.show {
@@ -51,7 +51,7 @@
   .menu-branding {
     margin: 0;
     padding: 0;
-    background: darkgray;
+    background: #00715d;
     transform: translate3d(-100%, 0, 0);
     transition: all 0.3s ease-out; }
     .menu-branding.show {
@@ -62,7 +62,7 @@
       background: url("../img/portrait_sm.png");
       background-size: cover;
       border-radius: 100%;
-      border: solid #0000ff; }
+      border: solid #eece1a; }
   .menu .nav-item {
     width: 66%;
     text-align: center;
@@ -74,10 +74,10 @@
     font-size: 1.2rem;
     font-weight: 400; }
     .menu .nav-link:hover {
-      color: #0000ff;
+      color: #eece1a;
       transition: all 0.3s ease-out; }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   .menu-branding, .menu-nav {
     flex-flow: row wrap;
     width: 100%;
@@ -91,7 +91,7 @@
       background: url("../img/portrait_sm.png");
       background-size: cover;
       border-radius: 100%;
-      border: solid #0000ff; }
+      border: solid #eece1a; }
   .menu-nav {
     transform: translate3d(0, 100%, 0); } }
 
@@ -99,12 +99,11 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #aaaaaa;
-  color: #000000;
+  background-color: #00735e;
+  color: #ffffff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 2; }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body#bg-img {
     background: url("../img/bg.jpg");
     background-attachment: fixed;
@@ -116,20 +115,22 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(170, 170, 170, 0.89);
+      background-color: rgba(0, 115, 94, 0.89);
       z-index: -1; }
 
 h1, h2, h3 {
-  font-weight: 300; }
+  font-weight: 300;
+  cursor: default; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 3rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.33rem 3rem;
-    background-color: rgba(3, 3, 3, 0.09); }
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.09); }
 
 a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none; }
 
 ul {
@@ -141,19 +142,36 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #0000ff; }
+  color: #eece1a; }
 
 main {
   align-items: center;
   text-align: center;
-  padding: 3rem;
   height: 100%; }
   main .icons {
     margin-top: 3rem; }
     main .icons a {
       padding: 0.33rem; }
-      main .icons a:hover {
-        color: #0000ff;
+      main .icons a:hover i.fa-twitter {
+        color: #4099FF;
+        transition: all 0.3s ease-out; }
+      main .icons a:hover i.fa-facebook {
+        color: #3b5999;
+        transition: all 0.3s ease-out; }
+      main .icons a:hover i.fa-google-plus {
+        color: #dd4b39;
+        transition: all 0.3s ease-out; }
+      main .icons a:hover i.fa-linkedin {
+        color: #0077B5;
+        transition: all 0.3s ease-out; }
+      main .icons a:hover i.fa-github {
+        color: #211F1F;
+        transition: all 0.3s ease-out; }
+      main .icons a:hover i.fa-stack-overflow {
+        color: #ff5700;
+        transition: all 0.3s ease-out; }
+      main .icons a:hover i.fa-slack {
+        color: #3aaf85;
         transition: all 0.3s ease-out; }
   main#home {
     overflow: hidden; }
