@@ -67,4 +67,4 @@ function load(text) {
 
 
 // Context menu
-document.addEventListener('contextmenu', event => event.preventDefault());
+// document.addEventListener('contextmenu', event => event.preventDefault());
