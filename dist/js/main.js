@@ -1,3 +1,4 @@
+// Menu actions
 const menu_btn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menu_branding = document.querySelector(".menu-branding");
@@ -28,4 +29,12 @@ function toggleMenu() {
         menu_status = false;
     }
 }
+
+// Loading content
+
+
+
+
+
+// Context menu
 document.addEventListener('contextmenu', event => event.preventDefault());
