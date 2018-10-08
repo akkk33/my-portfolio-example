@@ -43,15 +43,26 @@ function selected(item) {
 }
 function load(text) {
     toggleMenu();
+    var xhr = new XMLHttpRequest();
     if (text == "Home") {
-        content_area.innerHTML = '';
+        $file = 'home.php';
     } else if (text == "About me") {
-        content_area.innerHTML = 'About';
+        $file = 'about.html';
     } else if (text == "Past projects") {
-        content_area.innerHTML = 'Past projects';
+        $file = 'showcase.html';
     } else if (text == "Contact me") {
-        content_area.innerHTML = 'Contact';
+        $file = 'contact.html';
     }
+    xhr.open('GET', $file, false);
+    xhr.onreadystatechange = function () {
+        if (this.readyState !== 4) return;
+        if (this.status == 200) {
+            content_area.innerHTML = this.responseText;
+        } else {
+            content_area.innerHTML = '';
+        }
+    };
+    xhr.send();
 }
 
 
