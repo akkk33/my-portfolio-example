@@ -32,9 +32,28 @@ function toggleMenu() {
 
 // Loading content
 
-
-
+const content_area = document.querySelector("#content");
+nav_item.forEach(item => item.addEventListener("click", function () {
+    selected(item);
+}, false));
+function selected(item) {
+    nav_item.forEach(item => item.classList.remove('selected'));
+    item.classList.add('selected');
+    load(item.textContent.trim());
+}
+function load(text) {
+    toggleMenu();
+    if (text == "Home") {
+        content_area.innerHTML = '';
+    } else if (text == "About me") {
+        content_area.innerHTML = 'About';
+    } else if (text == "Past projects") {
+        content_area.innerHTML = 'Past projects';
+    } else if (text == "Contact me") {
+        content_area.innerHTML = 'Contact';
+    }
+}
 
 
 // Context menu
-document.addEventListener('contextmenu', event => event.preventDefault());
+// document.addEventListener('contextmenu', event => event.preventDefault());
