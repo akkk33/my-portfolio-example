@@ -86,11 +86,19 @@
     }
     }
     .nav-item{
+        border: solid $primary_color;
+        margin: 0 0 5px 0;
+        padding: 0.5rem;
+        cursor: pointer;
         width: 66%;
         text-align: center;
-        margin: 0 0 5px 0;
         text-transform: uppercase;
-    
+        &:hover{
+            color: $primary_color;
+            background-color: $secondary_color;
+            border: solid $secondary_color;
+            @include EaseOut;
+        }
     }
     .nav-link{
         display: inline-block ;
