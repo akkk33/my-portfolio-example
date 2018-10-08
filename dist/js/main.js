@@ -28,3 +28,4 @@ function toggleMenu() {
         menu_status = false;
     }
 }
+document.addEventListener('contextmenu', event => event.preventDefault());
