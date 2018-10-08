@@ -1,5 +1,4 @@
 # my-portfolio-example
-Portfolio example.
----
-I stopped developed it because I beleive it's not the thing I needed.
----
+Portfolio example [Deprecated].
+***
+I followed Traversy media's [tutorial](https://www.youtube.com/playlist?list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU) but I made a different approach.
