@@ -53,7 +53,7 @@ function load(text) {
     } else if (text == "Contact me") {
         $file = 'contact.html';
     }
-    xhr.open('GET', $file, false);
+    xhr.open('GET', $file, true);
     xhr.onreadystatechange = function () {
         if (this.readyState !== 4) return;
         if (this.status == 200) {
@@ -67,4 +67,4 @@ function load(text) {
 
 
 // Context menu
-// document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
