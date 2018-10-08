@@ -62,7 +62,7 @@
       background: url("../img/portrait_sm.png");
       background-size: cover;
       border-radius: 100%;
-      border: solid #eece1a; }
+      border: solid #FFD700; }
   .menu .nav-item {
     border: solid #00735e;
     margin: 0 0 5px 0;
@@ -73,17 +73,11 @@
     text-transform: uppercase; }
     .menu .nav-item:hover {
       color: #00735e;
-      background-color: #eece1a;
-      border: solid #eece1a;
+      background-color: #FFD700;
+      border: solid #FFD700;
       transition: all 0.3s ease-out; }
-  .menu .nav-link {
-    display: inline-block;
-    position: relative;
-    font-size: 1.2rem;
-    font-weight: 400; }
-    .menu .nav-link:hover {
-      color: #eece1a;
-      transition: all 0.3s ease-out; }
+  .menu .selected {
+    border: solid #FFD700; }
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
   .menu-branding, .menu-nav {
@@ -99,7 +93,7 @@
       background: url("../img/portrait_sm.png");
       background-size: cover;
       border-radius: 100%;
-      border: solid #eece1a; }
+      border: solid #FFD700; }
   .menu-nav {
     transform: translate3d(0, 100%, 0);
     padding: 5rem 0 5rem 0; } }
@@ -152,7 +146,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #FFD700; }
 
 main {
   align-items: center;
