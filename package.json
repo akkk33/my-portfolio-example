@@ -4,11 +4,11 @@
   "description": "responsive portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "akkk33",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.9.3"
+    "sass": "^1.50.0"
   }
 }
